@@ -1,7 +1,5 @@
 # Machine Learning to Predict Myers Briggs Personality Type from Text
-By Rachel Peng and Erin Thomas
-CS 440: Intro to Artifical Intelligence
-Boston University
+By Rachel Peng and Erin Thomas | CS 440: Intro to Artifical Intelligence | Boston University
 
 ## References
 - https://medium.com/towards-artificial-intelligence/training-ai-to-predict-myers-briggs-personality-types-from-texts-d4e3d7baf17
