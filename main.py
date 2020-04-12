@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import nltk
 
-df = pd.read_csv("final.csv")
+df = pd.read_csv("mbti_types.csv")
 
 # Print dataset
 print(df.head)
