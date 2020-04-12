@@ -68,3 +68,4 @@ plt.show()
 sns.heatmap(df[['is_E', 'is_S', 'is_T', 'is_J']].corr(), annot = True, cmap = 'RdPu')
 plt.title('Correlation of Variables')
 plt.show()
+
