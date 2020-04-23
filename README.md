@@ -5,9 +5,9 @@ By Rachel Peng and Erin Thomas | CS 440: Intro to Artifical Intelligence | Bosto
 This program uses Natural Language Processing (NLP) to predict a Myers-Briggs personality type from text. We borrowed text data from this Kaggle dataset.
 
 ## How to Run This Code
-1. Fire up your terminal and type 'git clone https://github.com/rachelvpeng/cs440.git'.
-2. Install 'requirements.txt' by typing 'pip install -r requirements.txt'.
-3. Run 'main.py'.
+1. Fire up your terminal and type `git clone https://github.com/rachelvpeng/cs440.git`.
+2. Install `requirements.txt` by typing `pip install -r requirements.txt`.
+3. Run `main.py`.
 
 ## References
 - https://medium.com/towards-artificial-intelligence/training-ai-to-predict-myers-briggs-personality-types-from-texts-d4e3d7baf17
