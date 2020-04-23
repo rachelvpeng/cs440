@@ -30,6 +30,7 @@ df = pd.read_csv("mbti_types.csv")
 
 df_working = df.copy()
 df_working.head()
+# sjdfioew
 
 # Convert to binary classifiers
 df_working['I-E'] = df_working['type'].map(lambda x: 'Introversion' if x[0] == 'I' else 'Extroversion')
