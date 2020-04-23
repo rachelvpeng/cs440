@@ -9,6 +9,8 @@ import string
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
+#import spacy
+#from spacy.lang.en import English
 
 # Function to clean text data
 def cleaner(text):
@@ -20,8 +22,8 @@ def cleaner(text):
     text = text.lower().strip()                                      # Converts to lower case
     final_text = []
     for w in text.split():
-        if w not in stop:
-            final_text.append(stemmer.stem(w.strip()))
+        #if w not in stop:
+        final_text.append(stemmer.stem(w.strip()))
     return ' '.join(final_text)
 
 df = pd.read_csv("mbti_types.csv")
@@ -51,7 +53,7 @@ df_posts.shape
 print(df_posts.sum().sort_values(ascending=False).head(10)) # Print top 10 words in posts
 
 # Create stopwords list including 16 MBTI types to avoid biasing the model
-types = ['infj', 'entp', 'intp', 'intj', 'entj', 'enfj', 'infp', 'enfp', 'isfp', \
+'''types = ['infj', 'entp', 'intp', 'intj', 'entj', 'enfj', 'infp', 'enfp', 'isfp', \
          'istp', 'isfj', 'istj', 'estp', 'esfp', 'estj', 'esfj']
 stop = stopwords.words('english')
 
@@ -59,11 +61,12 @@ for type in types:
     stop.append(type)
 
 stop_rev = stop    
-print(stop_rev)
+print(stop_rev)'''
 
 
 # Re-run CountVectorizer to exclude stopwords, allow 2-word pairs, and limit the number of columns to 1000
-cv = CountVectorizer(stop_words=stop_rev, ngram_range=(1,2), max_features=1000)
+'cv = CountVectorizer(stop_words=stop_rev, ngram_range=(1,2), max_features=1000)'
+cv = CountVectorizer(ngram_range=(1,2), max_features=1000)
 cv.fit(posts)
 cv.transform(posts)
 
@@ -76,7 +79,8 @@ df_posts.shape
 print(df_posts.sum().sort_values(ascending=False).head(10)) # Print top 10 words in posts
 
 # Run a final CountVectorizer on posts to include cleaning preprocessor arguments
-cv = CountVectorizer(preprocessor=cleaner, stop_words=stop_rev, ngram_range=(1,2), max_features=1000)
+'cv = CountVectorizer(preprocessor=cleaner, stop_words=stop_rev, ngram_range=(1,2), max_features=1000)'
+cv = CountVectorizer(preprocessor=cleaner, ngram_range=(1,2), max_features=1000)
 cv.fit_transform(posts)
 
 cv.transform(posts).todense()
