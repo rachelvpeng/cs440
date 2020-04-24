@@ -9,8 +9,6 @@ import string
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
-#import spacy
-#from spacy.lang.en import English
 
 # Function to clean text data
 def cleaner(text):
