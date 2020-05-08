@@ -19,3 +19,11 @@ This program uses Natural Language Processing (NLP) to predict a Myers-Briggs pe
 - https://github.com/myarolin/Predicting_Personality_Type/blob/master/Notebook_Personality_type.ipynb
 - https://github.com/ianscottknight/Predicting-Myers-Briggs-Type-Indicator-with-Recurrent-Neural-Networks
 - https://docs.fast.ai/text.html 
+
+
+
+- https://medium.com/swlh/using-deep-learning-to-classify-a-reddit-user-by-their-myers-briggs-mbti-personality-type-6b1b163194d
+- https://docs.fast.ai/train.html#fit_one_cycle
+- https://www.tensorflow.org/tutorials/text/text_classification_rnn
+- https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/
+- https://towardsdatascience.com/multi-class-text-classification-with-lstm-1590bee1bd17
