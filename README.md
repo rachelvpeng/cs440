@@ -18,3 +18,4 @@ This program uses Natural Language Processing (NLP) to predict a Myers-Briggs pe
 - https://www.kaggle.com/ragnisah/text-data-cleaning-tweets-analysis
 - https://github.com/myarolin/Predicting_Personality_Type/blob/master/Notebook_Personality_type.ipynb
 - https://github.com/ianscottknight/Predicting-Myers-Briggs-Type-Indicator-with-Recurrent-Neural-Networks
+- https://docs.fast.ai/text.html 
